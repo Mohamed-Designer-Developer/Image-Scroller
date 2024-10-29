@@ -1,0 +1,61 @@
+/* reset page  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    margin-top: 40px;
+    /* margin-bottom: -100px; */
+    color: #00CD8E;
+}
+
+/* the over all style  */
+.image-scroller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+    cursor: pointer;
+}
+
+#nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+#backBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+    z-index: 11;
+}
+
+/* scrolling style */
+.images {
+    width: 1300px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.images div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    flex: none;
+}
+
+.images::-webkit-scrollbar {
+    display: none;
+}
